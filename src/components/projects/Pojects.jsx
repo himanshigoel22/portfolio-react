@@ -17,7 +17,7 @@ const items = [
     title: 'CineFiest',
     img: './cinefiest.png',
     desc:
-      'A responsive and user-friendly movie and TV show streaming site using React, Redux, and SCSS , utilized the TMDb (The Movie Database) API to fetch and display up-to-date information about movies and TV shows. Incorporated Redux for state management, ensuring a smooth and efficient data flow throughout the application.',
+      'A responsive and user-friendly movie and TV show streaming site using React, Redux, and SCSS , utilized the TMDb API to fetch and display up-to-date information about movies and TV shows. Incorporated Redux for state management, ensuring a smooth and efficient data flow throughout the application.',
     github: 'https://github.com/himanshigoel22/Cine-fiest', 
   },
 ];

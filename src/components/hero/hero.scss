@@ -63,10 +63,13 @@
         margin-top: 80px;
 
         @include mobile{
-            height: 50%;
+            height: 60%;
             top:unset;
-            bottom: 0;
-            margin-right: 35px;
+            bottom: -25px;
+            margin-right: 10%;
+            margin-top: unset;
+            display: flex;
+            justify-content: center;
         }
 
         img{

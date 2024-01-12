@@ -19,7 +19,7 @@ const Navbar = () => {
           <a href="https://www.linkedin.com/in/himanshi-goel22/"><FontAwesomeIcon icon={faLinkedin}  /></a>
           <a href="https://twitter.com/HimanshiGoel22"><FontAwesomeIcon icon={faTwitter} /></a>
           <a href="mailto:himanshigoel2409@gmail.com"><FontAwesomeIcon icon={faEnvelope}/></a>
-          <a href="./Resume.pdf"><FontAwesomeIcon icon={faFilePdf}/></a>
+          <a href="./resume2024.pdf"><FontAwesomeIcon icon={faFilePdf}/></a>
           
                
             </div>
