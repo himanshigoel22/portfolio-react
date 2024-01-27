@@ -1,7 +1,7 @@
 @import '../../app.scss';
 
 .hero {
-
+  max-width: 1336px;
   position: relative;
   display: flex;
   align-items: center;
@@ -10,7 +10,7 @@
   z-index: 1;
   margin-left: 10%;
   margin-right: 10%;
-
+  
   @include mobile{
     flex-direction: column-reverse;
   }
@@ -70,7 +70,7 @@
         font-weight: 600;
         padding: 10px ;
         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
-
+        text-align: center;
       }
       
     }
@@ -89,7 +89,8 @@
     }
 
   }
-
+  
+ 
  
 }
 @keyframes floating {

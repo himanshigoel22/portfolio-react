@@ -1,15 +1,13 @@
 import React from 'react';
 import './projects.scss';
-import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
-import { useRef } from 'react';
 
 const items = [
   {
     id: 1,
-    title: 'WanderLust',
+    title: 'StayGlobe',
     img: './wanderlust.png',
     desc:
-      'Wanderlust is a dynamic and user-friendly web platform designed to revolutionize the way people explore and book travel accommodations Tech used - HTML , CSS , JavaScript , MongoDb , ExpressJS , NodeJS ',
+      'StayGlobe is a dynamic and user-friendly web platform designed to revolutionize the way people explore and book travel accommodations Tech used - HTML , CSS , JavaScript , MongoDb , ExpressJS , NodeJS ',
     github: 'https://github.com/himanshigoel22/Major-Project', 
   },
   {
@@ -23,18 +21,18 @@ const items = [
 ];
 
 const Single = ({ item }) => {
-  const ref = useRef();
-  const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end start'] });
-  const y = useTransform(scrollYProgress, [0, 1], ['0%', '-300%']);
-
+ 
   return (
-    <section ref={ref}>
+    <section >
+    
       <div className="container">
+      <h2 className='title'>Featured Works</h2>
         <div className="wrapper">
+        
           <div className="imgContainer">
             <img src={item.img} alt="" />
           </div>
-          <motion.div className="textContainer" style={{ y }}>
+          <div className="textContainer" >
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
             <a href={item.github} target="_blank" rel="noopener noreferrer">
@@ -42,7 +40,7 @@ const Single = ({ item }) => {
                 <b>Github</b>
               </button>
             </a>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
@@ -50,21 +48,10 @@ const Single = ({ item }) => {
 };
 
 const Projects = () => {
-  const ref = useRef();
-
-  const { scrollYProgress } = useScroll({ target: ref, offset: ['end end', 'start start'] });
-
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 40,
-  });
-
+ 
   return (
     <div className="projects">
-      <div className="progress">
-        <h2>Featured Works</h2>
-        <motion.div style={{ scaleX }} className="progressBar"></motion.div>
-      </div>
+     
       {items.map((item) => (
         <Single item={item} key={item.id} />
       ))}

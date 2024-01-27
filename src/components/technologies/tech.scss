@@ -1,3 +1,4 @@
+@import '../../app.scss';
 .container {
     padding: 50px 0;
     display: flex;
@@ -14,9 +15,13 @@
 
         .title{
           text-align: center;
-          font-size: 40px;
+          font-size: 80px;
           margin-bottom: 25px;
           color: #ffa500;
+
+          @include mobile{
+            font-size: 32px;
+          }
         }
       }
       

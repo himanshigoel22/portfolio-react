@@ -45,6 +45,7 @@ const HeroSec = () => {
         <img src="heroSecImg.jpg" alt="" />
       </div>
     </div>
+  
   );
 }
 
