@@ -16,25 +16,13 @@ const textVariants = {
   },
 };
 
-const sliderVariants = {
-  initial: {
-    x: 0,
-  },
-  animate: {
-    x: "-220%",
-    transition: {
-      duration: 20,
-      repeatType: "mirror",
-      repeat: Infinity,
-    },
-  },
-};
+
 
 const HeroSec = () => {
 
   return (
     <div className='hero'>
-      <div className="wrapper">
+      <div className="content">
         <motion.div
           className="textContainer"
           variants={textVariants}
@@ -42,23 +30,19 @@ const HeroSec = () => {
           animate="animate"
         >
           <motion.h2 variants={textVariants}>
-            HIMANSHI GOEL
+          Hi , I'm Himanshi
           </motion.h2>
           <motion.h1 variants={textVariants}>
-            Full Stack Developer
+           I'm a student pursuing BTech and a passionate Full Stack Developer.
+           <br></br>Reach out if you'd like to know more !
           </motion.h1>
+          <a href="mailto:myemail@email.com" className="contactBtn">
+          Contact Me
+        </a>
         </motion.div>
       </div>
-      <motion.div
-        className="slidingTextContainer"
-        variants={sliderVariants}
-        initial="initial"
-        animate="animate"
-      >
-        Software Developer
-      </motion.div>
       <div className="imageContainer">
-        <img src="heroSec.jpg" alt="" />
+        <img src="heroSecImg.jpg" alt="" />
       </div>
     </div>
   );
